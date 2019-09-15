@@ -1,0 +1,13 @@
+{
+  "name": "@flume-cloud-services/sdk",
+  "version": "1.0.0",
+  "description": "The javascript library which make it easier to use Flume Cloud Services",
+  "main": "index.js",
+  "repository": "https://github.com/flume-cloud-services/sdk.git",
+  "author": "Erwan ROUSSEL <erwan.roussel51@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
