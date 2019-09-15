@@ -12,7 +12,7 @@ class FileStorage {
 
     async Connect () {
         try {
-            const signin = await this.instance.post('/signin', {username: name}, {})
+            const signin = await this.instance.post('/signin', {username: this.name}, {})
         } catch (e) {
             console.error(e)
         }
