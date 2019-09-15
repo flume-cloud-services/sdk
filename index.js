@@ -20,5 +20,5 @@ class Flume {
 }
 
 const flume = new Flume('admin', 'http://localhost')
-const test = await flume.FileStorage(5001).Connect()
-console.log(test)
+const test = flume.FileStorage(5001).Connect()
+test.then(response => console.log(response))
