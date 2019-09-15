@@ -18,7 +18,7 @@ class FileStorage {
         }
         try {
             const welcome = await this.instance.get('/welcome', {})
-            return welcome.data ? welcome.data : new Error("Wrong admin name")
+            return welcome ? welcome : new Error("Wrong admin name")
         } catch (e) {
             console.error(e)
         }

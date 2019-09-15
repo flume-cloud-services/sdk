@@ -1,6 +1,5 @@
 const { Cache, Database, FileStorage } = require('./clients')
 
-
 class Flume {
     constructor (name, address) {
         this.name = name
