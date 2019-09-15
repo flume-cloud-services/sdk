@@ -1,4 +1,4 @@
-const { Cache, Database, FileStorage } = require('./clients')
+const clients = require('./clients')
 
 class Flume {
     constructor (name, address) {
@@ -7,15 +7,15 @@ class Flume {
     }
 
     Database () {
-        return new Database(this.name)
+        return new clients.Database(this.name)
     }
 
     Cache () {
-        return new Cache(this.name)
+        return new clients.Cache(this.name)
     }
 
     FileStorage (port) {
-        return new FileStorage(this.name, this.address, port)
+        return new clients.FileStorage(this.name, this.address, port)
     }
 }
 
