@@ -34,10 +34,10 @@ connection.then(response => {
     fileUpload.then(response => console.log(response))
 })*/
 
-const flume = new Flume('admin', 'http://localhost')
+/*const flume = new Flume('admin', 'http://localhost')
 cache = flume.Cache(5002)
 connection = cache.Connect()
 connection.then(() => cache.Insert('hello', 'world'))
 .then(response => console.log(response))
 .then(() => cache.Get('hello'))
-.then(response => console.log(response))
+.then(response => console.log(response))*/
