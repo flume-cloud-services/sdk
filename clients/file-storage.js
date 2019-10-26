@@ -35,6 +35,20 @@ class FileStorage {
         }
 
     }
+
+    async PostFile(formData, authentication = 'no') {
+        try {
+            formData.append('need_auth', authentication)
+            const post = await this.instance.post('/post', formData, {
+                headers: {
+                    'Content-Type': `multipart/form-data; boundary=${formData._boundary}`
+                }
+            })
+            return post.data
+        } catch (e) {
+            console.error(e)
+        }
+    }
 }
 
 module.exports = FileStorage

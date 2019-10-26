@@ -19,6 +19,17 @@ class Flume {
     }
 }
 
+module.exports = Flume
+
+/*const FormData = require('form-data')
+
 const flume = new Flume('admin', 'http://localhost')
-const test = flume.FileStorage(5001).Connect()
-test.then(response => console.log(response))
+const fileStorage = flume.FileStorage(5001)
+const connection = fileStorage.Connect()
+connection.then(response => {
+    console.log(response.data)
+    let data = new FormData()
+    data.append('file', "Hello world !", 'hello.txt')
+    const fileUpload = fileStorage.PostFile(data)
+    fileUpload.then(response => console.log(response))
+})*/
