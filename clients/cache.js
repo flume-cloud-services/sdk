@@ -33,7 +33,6 @@ class Cache {
         } catch (e) {
             console.error(e)
         }
-
     }
 
     async Insert(key, value) {

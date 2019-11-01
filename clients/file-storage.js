@@ -33,7 +33,6 @@ class FileStorage {
         } catch (e) {
             console.error(e)
         }
-
     }
 
     async PostFile(formData, authentication = 'no') {
